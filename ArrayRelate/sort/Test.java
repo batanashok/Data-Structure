@@ -10,6 +10,8 @@ public class Test {
 		Sort.show(arr);
 		Sort.selection(arr);
 		Sort.show(arr);
+		Sort.recursiveBubble(arr, arr.length);
+		Sort.show(arr);
 
 	}
 

@@ -24,6 +24,29 @@ public class Sort {
 		return arr;
 	}
 	
+	static int[] recursiveBubble(int arr[], int length)
+	{
+		if(length == 1)
+			return arr;
+		boolean flag = false;
+		for(int i=0;i<length-1;i++)
+		{
+			if(arr[i]>arr[i+1])
+			{
+				int temp = arr[i];
+				arr[i]=arr[i+1];
+				arr[i+1]=temp;
+				flag = true;
+			}
+		}
+		if(flag == false)
+		{
+			return arr;
+		}
+		
+		return recursiveBubble(arr,length);
+	}
+	
 	static int[] selection(int arr[])
 	{
 		for(int i=0;i<arr.length-1;i++)
