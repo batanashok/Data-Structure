@@ -33,6 +33,6 @@ public class Search {
 			}
 		}
 		
-		return -1;
+		return -1; // if element is not present in array then we return -1 to indicate element is not found
 	}
 }
